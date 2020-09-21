@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html ,body{
+            height: 100%;
+        }
+
+        body{
+            display: flex;
+            background: linear-gradient(transparent 80%,rgba(0,0,0,0.5) 100%);
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+         width: 1000px;
+         height: 400px;
+         display: flex;
+         background-color: white;
+         box-shadow: 5px 5px 3px 3px rgb(182, 182, 182);
+         position: relative;
+        
+         
+        }
+        .main{
+            width: 250px;           
+            background: linear-gradient(to right,rgb(228, 228, 228) 10px,white 100px ,white , rgb(228, 228, 228) );
+            text-align: center;          
+            padding-top: 60px;
+            -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
+            border: 1px solid rgb(199, 199, 199)
+        }
+
+        .main img{
+            animation: drop;
+            animation-duration: 4s;
+            animation-delay: 0s   ;
+            animation-iteration-count: 1;
+
+        }
+        .main img:hover{
+            transform: scale(2);
+        }
+        
+        @keyframes drop {
+            0% {
+               transform: translateY(-200px);
+               opacity: 0;
+            }
+            25%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            70%{
+             opacity: 1;
+            }
+            }
+            100% { 
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        
+       
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main"><img src="https://picsum.photos/300/?random=1" alt="" style="border-radius: 50%; width: 100px;height:100px;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic qui a sint doloremque officiis ratione fugiat corporis eaque reprehenderit amet nulla nobis minima perferendis architecto debitis dolor, iure ipsam consequuntur!</p></div>
+        <div class="main"><img src="https://picsum.photos/300/?random=2" alt="" style="border-radius: 50%; width: 100px;height:100px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fuga consectetur reiciendis accusamus quam animi iusto? Aut a sunt at perferendis inventore, rerum, cumque distinctio perspiciatis suscipit, enim ad dolorem.</p></div>
+        <div class="main"><img src="https://picsum.photos/300/?random=3" alt="" style="border-radius: 50%; width: 100px;height:100px;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ullam dolorem debitis ad commodi vitae nostrum natus architecto, dolorum illum, mollitia sint doloremque minus suscipit enim deserunt aperiam voluptatibus nihil?</p></div>
+        <div class="main"><img src="https://picsum.photos/300/?random=4" alt="" style="border-radius: 50%; width: 100px;height:100px;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum numquam suscipit consectetur et, sit consequuntur alias nisi, molestias tenetur quisquam accusamus vitae asperiores tempore culpa facilis provident, totam cupiditate! Consequuntur!</p><div>
+           
+    </div>
+</body>
+</html>
